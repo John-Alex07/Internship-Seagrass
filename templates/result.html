@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Wine Review Classifier</title>
+    <style>
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #6f6e83;
+      }
+      
+      h1 {
+        text-align: center;
+        margin-top: 50px;
+      }
+      
+      .result {
+        width: 600px;
+        margin: 50px auto;
+        padding: 30px;
+        background-color: #fff;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+        border-radius: 10px;
+      }
+      
+      .result p {
+        font-size: 20px;
+        margin-bottom: 10px;
+      }
+      
+      .result span {
+        font-weight: bold;
+      }
+      
+      .result .label {
+        color: #fff;
+        background-color: #4CAF50;
+        padding: 5px 10px;
+        border-radius: 5px;
+      }
+      
+      .button {
+        display: block;
+        margin-top: 20px;
+        background-color: #4CAF50;
+        color: #fff;
+        padding: 10px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+      
+      .button:hover {
+        background-color: #3e8e41;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Wine Review Classifier</h1>
+    <div class="result">
+      <p>The variety of the wine is <span class="label">{{ variety }}</span>.</p>
+      <button class="button" onclick="window.location.href='/'">Make another prediction</button>
+    </div>
+  </body>
+</html>
